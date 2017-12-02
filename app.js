@@ -40,7 +40,8 @@ casper.start('https://www.olx.ua', function() {
 
 casper.run(function() {
 	this.echo(links.length);
-    this.echo(JSON.stringify(links)).exit();
+	// this.echo(JSON.stringify(links));
+    this.echo('-' + links.join('\n -')).exit();
 });
 
 
